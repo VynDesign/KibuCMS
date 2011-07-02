@@ -1,0 +1,49 @@
+html, body {background:#9a9a9a; margin:0px; padding:0px; font-family:"Verdana", "Geneva", sans-serif;}
+
+.container {width:980px; margin:0px auto;}
+
+#header {padding:0px; margin:0px;}
+
+#header h1 {font-size:3.0em; margin:0px; padding-top:15px;}
+
+#header h1 a {color:#ffffff; text-decoration:none;}
+
+#header h2 {color:#ffffff; font-style:italic; font-size:1.8em; margin:5px; margin-bottom:15px; text-align:center; font-weight:normal;}
+
+#header div.welcomeMessage {float:right; font-size:0.8em; background:#dcdcdc; padding:10px; margin:0px;}
+
+div#topNav {position:relative; clear:both; background:#777777; font-size:1.3em; max-height:2em; margin:0px auto; padding:0px;}
+
+div#topNav ul#globalNav {float:right; position:relative; right:50%; text-align:center; margin:0px auto; padding:0; height:2em;}
+
+div#topNav ul#globalNav li {display:block; float:left; list-style:none; margin:0; padding:0; position:relative; left:50%; list-style-type:none;}
+
+ul#globalNav li a {display:block; padding:0px 15px; text-decoration:none; height:2em; line-height:2em; color:#eeeeee;}
+
+ul#globalNav li a:hover {background:#cccccc; color:#696969;}
+
+ul#globalNav li.globalnavselected a {background:#ffffff; color:#000000;}
+
+#content {background:#ffffff; margin-top:0px; padding-top:10px; padding-bottom:10px;}
+
+#content #sidebar {float:left; width:200px;}
+
+#content #sidebar ul.currentnavlinks {list-style:none; padding:0px; margin:40px 0px 0px 0px;}
+
+#content #sidebar ul.currentnavlinks li {list-style-type:none; padding:0px; margin:0px;}
+
+#content #sidebar ul.currentnavlinks li a {display:block; padding:4px 4px 4px 3px; border:1px solid #9a9a9a; margin-bottom:5px; background:#9a9a9a; text-decoration:none; color:#eeeeee;}
+
+#content #sidebar ul.currentnavlinks li a:hover {background:#cccccc; color:#696969;}
+
+#content #sidebar ul.currentnavlinks li.currentnavselected a {padding:4px 4px 4px 2px; border:1px solid #9a9a9a; border-left:2px solid #9a9a9a; border-right:0px; background:#ffffff; color:#000000;}
+
+#content #body {float:right; width:750px;}
+
+#footer {text-align:center; clear:both; padding:10px 0px; color:#ffffff;}
+
+#footer a {color:#ffffff;}
+
+div.builtOnKibu {padding:10px; text-align:center; font-size:0.8em; color:#ffffff;}
+
+div.builtOnKibu a {color:#ffffff;}
