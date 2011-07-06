@@ -7,13 +7,13 @@
 	 * @author Vyn Raskopf
 	 * @copyright Kibu 2010
 	 * @version 1.0.0.2
-	 */	
+	 */
 
 	require_once './kibu/core/class/Url.php';
 	require_once './kibu/core/class/Template.php';
-	
+
 	class Navigation extends URL {
-		
+
 		private $_allNodes = array();
 		private $_globalNav;
 		public $_currentSectionID;
@@ -34,7 +34,7 @@
 		public $_filename;
 		public $_extension;
 		public $_section;
-		
+
 		public function __construct($siteConfig, $currentSectionID, $navigationType = 'Top', $getHiddenSections = false, $getHiddenPages = false) {
 			parent::__construct();
 			global $content;
@@ -48,26 +48,26 @@
 			$this->setCurrentNode($currentSectionID, $this->_getHiddenPages);
 			$this->setCurrentNav();
 		}
-		
+
 		protected function _getVar($var) {
 			return $this->$var;
 		}
-		
+
 		protected function _setSelectedNodes() {
 			$this->_selectedNode = parent::getVar('_filename');
 			$this->_selectedNodeParent = parent::getVar('_section');
 		}
-		
+
 		protected function _getSelectedNode() {
 			return $this->_selectedNode;
 		}
-		
+
 		protected function _getSelectedNodeParent() {
 			return $this->_selectedNodeParent;
 		}
-		
+
 		private function setAllNodes() {
-			global $db;	
+			global $db;
 			$query = "SELECT navigationTypes.*, navigationSectionsOrder.sectionOrderNum, navigationSections.sectionName, navigationSections.sectionFullName, contentRecords.contentTitle, contentRecords.titleClean
 						FROM navigationTypes, navigationSectionsOrder, navigationSections
 						LEFT JOIN contentRecords ON navigationSections.sectionID = contentRecords.sectionID
@@ -85,9 +85,9 @@
 				$this->_allNodes[] = $assoc;
 			}
 			print_r($this->_allNodes);
-						
+
 		}
-		
+
 		public function setGlobalNav($getHidden = false) {
 			global $content;
 			global $db;
@@ -109,12 +109,12 @@
 			}
 			$this->_globalNavNodes = $globalNavNodes;
 		}
-		
+
 		protected function getGlobalNavNodes() {
 			return $this->_globalNavNodes;
 		}
-		
-		
+
+
 		protected function setCurrentNode($sectionID, $getHidden = false) {
 			global $db;
 			$query = "SELECT contentRecords.titleClean, contentRecords.contentTitle, contentRecords.isVisible, contentRecords.contentRecordNum, navigationSections.*
@@ -131,16 +131,16 @@
 					$currentNode[] = $nav;
 				}
 				$this->_currentNode = $currentNode;
-			}	
+			}
 			else {
 				$this->_currentNode = NULL;
-			}		
+			}
 		}
-		
+
 		protected function getCurrentNode(){
 			return $this->_currentNode;
 		}
-		
+
 		protected function setCurrentNav() {
 			if(is_array($this->_currentNode)) {
 				foreach($this->_currentNode as $key => $node) {
@@ -157,9 +157,9 @@
 			}
 			else {
 				$this->_currentNav = null;
-			}			
+			}
 		}
-		
+
 		public function getGlobalNav($navigationTypeID = '1') {
 			$globalNav = "<ul id=\"globalNav\">\n";
 			foreach($this->_globalNavNodes as $node => $result) {
@@ -177,7 +177,7 @@
 			$this->_globalNav = $globalNav;
 			return $this->_globalNav;
 		}
-		
+
 		public function getCurrentNav() {
 			return $this->_currentNav;
 		}

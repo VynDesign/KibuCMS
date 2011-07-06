@@ -68,9 +68,9 @@
 		protected $_errorMsg = array();
 
 		/**
-		 * Stores the value of the error
+		 * Stores the css class of the form
 		 *
-		 * @var bool
+		 * @var string 
 		 */
 		protected $_error = false;
 
@@ -392,7 +392,7 @@
 
 		/**
 		* Retrieves the error data from the object's memory
-		* @return bool $this->_error
+		* @return string $this->_error
 		*/
 		public function getError() {
 			return $this->_error;

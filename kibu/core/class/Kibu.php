@@ -138,7 +138,7 @@
 						$this->tpl->set('welcomeMessage', $this->auth->welcomeMessage());
 						$this->tpl->set('bodyExtra', $this->_bodyExtra);
 						echo $this->tpl->fetch($this->_contentType['templateLink'] . '.tpl.php'); // echo the results to output the assembled page, using the content template link from first query as master template.
-				}	
+				}
 		}
 
 ?>

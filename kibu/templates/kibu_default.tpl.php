@@ -26,7 +26,7 @@
 					</div>
 			</div>
 			<div id="topNav">
-				<?=$globalNav;?>
+						<?=$globalNav;?>
 			</div>
 			<div id="content">
 					 <div class="container">

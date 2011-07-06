@@ -156,7 +156,7 @@
 						$msg .="<li class=\"message\">You failed to supply information for a required field.</li>\n";	
 					}
 					elseif(!$checkPass) { // if the password or userName are wrong
-						$msg .="<li class=\"message\">You submitted an invalid username or password.<br />Forgot your login credentials?</a> <a href=\"/registration/confirm.html?action=resetpassword\">Reset your password</a>!</li>\n";
+						$msg .="<li class=\"message\">You submitted an invalid username or password.<br />Forgot your login credentials?</a> <a href=\"/modal.php?class=Registration&amp;mode=resetpassword&amp;curPage=\" title=\"Reset Password\" onclick=\"Modalbox.show(this.href, {title: this.title, width: 700, overlayClose: false}); return false;\">Reset your password</a>!</li>\n";
 					}
 					$msg .= "\t\t\t</ul>\n";
 					$this->_msg = $msg;
@@ -174,6 +174,7 @@
 					$pCookie->bakeCookie('password', $this->_password);
 					$this->uCookie = $uCookie;
 					$this->pCookie = $pCookie;
+					$this->setUserInfo();
 					if($redirect) {
 						header("Location:$redirect");
 					}
@@ -227,13 +228,17 @@
 		public function welcomeMessage() {
 				global $url;
 				$messageTpl = new Template('./kibu/templates/');
+				$messageTpl->set("curPage", $url->_path);
 				if((isset($_COOKIE[$this->uCookie])) && (isset($_COOKIE[$this->pCookie])) && ($this->checkPass())) {
 						$messageTpl->set("curPage", $url->_path);
 						$messageTpl->set("userName", $this->_userName);
 						$tplFile = "welcome_message.tpl.php";
 				}
+				elseif(isset($_COOKIE[$this->cookiePrefix."_regconfirm"]))
+				{
+						$tplFile = "welcome_confirm.tpl.php";
+				}
 				else {
-						$messageTpl->set("curPage", $url->_path);
 						$tplFile = "welcome_login.tpl.php";
 				}
 				return $messageTpl->fetch($tplFile);

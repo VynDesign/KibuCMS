@@ -65,16 +65,35 @@ class Registration extends Form {
 										}
 								}
 						}
+						elseif($this->_mode == 'changepassword')
+						{
+								if(!isset($this->_submit['curPass'])) {
+										$this->_changePasswordForm();
+								}
+								elseif(isset($this->_submit['curPass'])) {
+										$this->_resetPassword();
+										if($this->_error == false) {
+												$this->_nextStep = 'close';
+										}
+										else {
+												$this->_changePasswordForm();
+										}
+								}
+						}
 				}
 				else {
 						if($this->_mode == 'register') {
 								$this->_regForm();
 						}
-						if($this->_mode == 'confirm') {
+						elseif($this->_mode == 'confirm') {
 								$this->_confirmForm();
 						}
-						if($this->_mode == 'resetpassword') {
+						elseif($this->_mode == 'resetpassword') {
 								$this->_resetPasswordForm();
+						}
+						elseif($this->_mode == 'changepassword')
+						{
+
 						}
 				}
 		}
@@ -108,6 +127,12 @@ class Registration extends Form {
 				$this->_form = $confirmFormTpl->fetch('reset_password_form.tpl.php');
 		}
 
+		private function _changePasswordForm() {
+				$changePassFormTpl = new Template('./kibu/templates/');
+				$changePassFormTpl->set_vars($this->_formData, true);
+				$this->_form = $changePassFormTpl->fetch('registration_change_pass.tpl.php');
+		}
+
 		private function setVars() {
 				if($this->_mode == 'confirm') {
 						$this->_required = array('emailAddress', 'authCode');
@@ -122,6 +147,11 @@ class Registration extends Form {
 						else {
 								$this->_formData['emailAddress'] = null;
 						}
+				}
+				elseif($this->_mode == 'changepassword')
+				{
+						$this->_required = array('curPass', 'password');
+						$this->_matching = array('password');
 				}
 				else {
 						if((isset($_POST['register']) || (isset($_POST['updateInfo'])))) {
@@ -251,7 +281,11 @@ class Registration extends Form {
 										$emailBodyTpl->set("site", $_SERVER['HTTP_HOST']);
 										$emailBodyTpl->set("authCode", $this->_authcode);
 										$emailBody = $emailBodyTpl->fetch('registration_confirm_email.tpl.php');
-										$send = mail($emailAddress, 'Registration confirmation email from '.$_SERVER['HTTP_HOST'].'', $emailBody, "From: ".	$siteConfig['siteEmail']); // utilize php mail function
+										$headers = "From: ".$siteConfig['siteAddress']."";
+										$headers .= "<".$siteConfig['siteEmail'].">\n";
+										$headers .= "Reply-To:".$siteConfig['siteEmail']."\n";
+										$headers .= "Return-Path:".$siteConfig['siteEmail'];
+										$send = mail($emailAddress, 'Registration confirmation email from '.$_SERVER['HTTP_HOST'].'', $emailBody, $headers).""; // utilize php mail function
 										if($send) {
 												$this->submitRedirect = $this->_curPage;
 												$this->_nextStep = 'close';
@@ -336,6 +370,7 @@ class Registration extends Form {
 		//
 		private function _resetPassword() {
 				global $db;
+				$this->_msg[] = null;
 				if(isset($this->_submit['emailAddress'])) {
 						if(!Utility::validateEmail($this->_submit['emailAddress'])) {
 								$this->_error = true;
@@ -355,31 +390,34 @@ class Registration extends Form {
 										$oldPassword = $array['password'];
 										$newPassword = Utility::generateRandStr(8); // generate a new random password using generateRandStr() method from '/kibu/core/class/Utility.php'
 										$newHashPassword = md5($newPassword); // create hashed password to insert into database
+										$forceChange = 1;
 								}
 						}
 				}
 				elseif(isset($this->_submit['password'])) {
 						$username = $this->_auth->getUserName();
 						$oldPassword = $this->_submit['curPass'];
-						$newPassword = $this->_submit['newPass'][0];
+						$newPassword = $this->_submit['password'][0];
 						$oldHashPass = md5($oldPassword);
-						$query = "SELECT userID, userName, password FROM userRecords WHERE password = '".$oldHashPass."' AND userName = '".$username."'"; // get userId, userName, and original password from database where the email address is the same as the posted form data
-						$db->setQquery($query);
+						$query = "SELECT userID, userName, password, emailAddress FROM userRecords WHERE password = '".$oldHashPass."' AND userName = '".$username."'"; // get userId, userName, and original password from database where the email address is the same as the posted form data
+						$db->setQuery($query);
 						$numRows = $db->getNumRows();
 						if($numRows == '0') {
 								$this->_error = true;
 								$this->_errorMsg[] = "The password you entered doesn't appear to be valid. Please try again below.";
 						}
 						else {
-								$array = mysql_fetch_assoc($query); // output array of the query
+								$array = $db->getAssoc(); // output array of the query
 								$oldPassword = $array['password'];
 								$newHashPassword = md5($newPassword);
+								$forceChange = 0;
+								$emailAddress = $array['emailAddress'];
 						}
 				}
 				if($this->_error != true) { // otherwise, we continue...
 						$userID = $array['userID'];
 						$userName = $array['userName']; // turn userName into variable
-						$setNewPassword = "UPDATE userRecords SET password = '".$newHashPassword."' WHERE userID = '".$userID."'"; // create sql update of new encrypted password
+						$setNewPassword = "UPDATE userRecords SET password = '".$newHashPassword."', forcePWChange = '".$forceChange."' WHERE userID = '".$userID."'"; // create sql update of new encrypted password
 						if(mysql_query($setNewPassword)) { // if the sql statement is successfully executed
 								$siteConfig = $this->_url->siteConfig;
 								$emailBodyTpl = new Template('./kibu/templates/');
@@ -392,9 +430,13 @@ class Registration extends Form {
 								$emailBodyTpl->set("userName", $userName);
 								$emailBodyTpl->set("password", $newPassword);
 								$emailBodyTpl->set("site", $_SERVER['HTTP_HOST']);
-								$emailBodyTpl->set("authCode", null);
+								$emailBodyTpl->set("authCode", "auth");
 								$emailBody = $emailBodyTpl->fetch('registration_confirm_email.tpl.php');
-								$send = mail($emailAddress, 'Reset password email from '.$_SERVER['HTTP_HOST'].'', $emailBody, $siteConfig['siteEmail']); // utilize php mail function
+								$headers = "From: ".$siteConfig['siteAddress']."";
+								$headers .= "<".$siteConfig['siteEmail'].">\n";
+								$headers .= "Reply-To:".$siteConfig['siteEmail']."\n";
+								$headers .= "Return-Path:".$siteConfig['siteEmail'];
+								$send = mail($emailAddress, "Reset password email from ".$_SERVER['HTTP_HOST']."", $emailBody, $headers); // utilize php mail function
 								if($send) {
 										$this->_msg = "Your password has been successfully changed. Watch your email for the confirmation containing your username and new password.";
 								}

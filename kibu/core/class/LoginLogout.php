@@ -11,6 +11,7 @@ class LoginLogout {
 
 		private $_mode;
 		private $_auth;
+		private $_userInfo;
 		private $_curPage;
 		private $_form;
 		private $_formData;
@@ -39,9 +40,17 @@ class LoginLogout {
 						if(isset($_POST['submit'])) {
 								$this->_submit = $_POST;
 								if($this->_auth->setLogin()) {
+									$this->_userInfo = $this->_auth->getUserInfo();
 									$this->submitRedirect = $this->_curPage;
-									$this->_nextStep = 'close';
-									$this->_msg = "You are now logged in!";
+
+									if($this->_userInfo['forcePWChange'] == true) {
+											$this->_nextStep = "close";
+											$this->_msg = "You are now logged in using your temporary randomly generated password. It is recommended that you <a href=\"/modal.php?class=Registration&amp;mode=changepassword&amp;curPage=".$this->_curPage."\" title=\"Change Password\" onclick=\"Modalbox.show(this.href, {title: this.title, width: 700, overlayClose: false}); return false;\">change it to something you can more easily remember now</a>. You will continue to see this message each time you log in until you do so.";
+									}
+									else {
+										$this->_nextStep = 'close';
+										$this->_msg = "You are now logged in!";
+									}
 							}
 							else {
 									$this->_setVars();
