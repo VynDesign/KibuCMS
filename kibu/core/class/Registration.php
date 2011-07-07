@@ -285,7 +285,7 @@ class Registration extends Form {
 										$headers .= "<".$siteConfig['siteEmail'].">\n";
 										$headers .= "Reply-To:".$siteConfig['siteEmail']."\n";
 										$headers .= "Return-Path:".$siteConfig['siteEmail'];
-										$send = mail($emailAddress, 'Registration confirmation email from '.$_SERVER['HTTP_HOST'].'', $emailBody, $headers).""; // utilize php mail function
+										$send = mail($emailAddress, 'Registration confirmation email from '.$_SERVER['HTTP_HOST'].'', $emailBody, $headers); // utilize php mail function
 										if($send) {
 												$this->submitRedirect = $this->_curPage;
 												$this->_nextStep = 'close';
@@ -436,7 +436,7 @@ class Registration extends Form {
 								$headers .= "<".$siteConfig['siteEmail'].">\n";
 								$headers .= "Reply-To:".$siteConfig['siteEmail']."\n";
 								$headers .= "Return-Path:".$siteConfig['siteEmail'];
-								$send = mail($emailAddress, "Reset password email from ".$_SERVER['HTTP_HOST']."", $emailBody, $headers); // utilize php mail function
+								$send = mail($emailAddress, 'Reset password email from '.$_SERVER['HTTP_HOST'].'', $emailBody, $headers); // utilize php mail function
 								if($send) {
 										$this->_msg = "Your password has been successfully changed. Watch your email for the confirmation containing your username and new password.";
 								}
