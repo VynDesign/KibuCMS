@@ -1,0 +1,14 @@
+
+a {color:#731515;}
+
+a:hover {color:#3d0909;}
+
+form fieldset {border:1px solid #482801;}
+
+form fieldset legend {background:#482801; color:#f9ae17;}
+
+div.locationDetails {width:45%; float:left;}
+
+div.locationMap {float:right;} 
+
+table.sysManagement td {border-top:1px solid brown !important;}

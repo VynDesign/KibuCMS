@@ -1,0 +1,219 @@
+
+html {padding:0px; margin:0px; font-family:'Geneva', 'Verdana', sans-serif; background:#ffffff;}
+
+body {padding:0px; padding-bottom:50px; margin:0px; width:100%;}
+
+a {color:#731515;}
+
+a:hover {color:#3d0909;}
+
+a img {border:0px;}
+
+.noshow {margin-left:-9999px;}
+
+strong {color:#6e8c00;}
+
+
+
+
+#header {position:relative; width:985px; height:271px; margin:0px auto; padding:0px; background:url('/kibu/site_resources/images/design_graphics/CGF_Header.png') no-repeat top left;}
+
+#header h1 {position:relative; margin:0px; padding:0px; font-family:'Bodoni'; font-size:2.5em;}
+
+#header h1 a {position:absolute; padding:0px; margin:0px; display:block; width:985px; height:271px; background:none;}
+
+#header h2 {font-family:'Bodoni'; font-style:italic; margin:0px; padding:0px;}
+
+#header .welcomeMessage {}
+
+
+
+
+
+#globalNav {font-family: 'Palatino Linotype', 'Book Antiqua', 'Palatino', serif; background:#482801; position:relative; clear:both; font-size:0.9em; height:2em; width:985px; margin:0px auto; padding:0px;}
+
+#globalNav ul.dropnav {float:right; list-style:none; position:relative; right:50%; text-align:center; margin:0px auto; padding:0; height:2.0em;}
+
+#globalNav ul.dropnav li.topnodeitem {display:block; float:left; list-style:none; margin:0px; padding:0; position:relative; left:50%; list-style-type:none; text-transform:uppercase;}
+
+#globalNav ul.dropnav li a {display:block; padding:0px 15px; color:#f9ae17; text-decoration:none; height:2.0em; line-height:2.0em;}
+
+#globalNav ul.dropnav li.selected {background:#f9dfa9; color:#482801;}
+
+#globalNav ul.dropnav li.selected a {color:#482801;}
+
+#globalNav ul.dropnav li:hover a {background:#f9ae17; color:#482801; height:2.0em;}
+
+#globalNav ul li ul {font-family:'Geneva', 'Verdana', sans-serif; position:absolute; left:-999em; z-index:999; line-height:1.0em; min-width:100%; padding:5px; text-transform:none;}
+
+#globalNav ul li:hover ul, #globalNav ul li.ieFix ul {float:none; position:absolute; left:0em; display:block; text-align:left; list-style-type:none; background:#f9ae17; margin:0px; padding:0px;}
+
+#globalNav ul li.childnodeitemselected, #globalNav ul li.childnodeitem {float:none; white-space:nowrap; position:relative; font-size:75%; margin:0px; padding:1px;}
+
+#globalNav ul.childnode li.selected {white-space:nowrap; float:none; padding:0px;}
+
+#globalNav ul li.childnodeitem a {display:block; white-space:nowrap; line-height:normal; margin:0px; padding:5px 20px;}
+
+#globalNav ul li.childnodeitem a:hover, ul.childnode li.selected a:hover {background:#f9dfa9;}
+
+
+
+
+#content {width:985px; margin:auto;}
+
+#content #body {float:left; width:610px; padding:10px; margin-left:15px;}
+
+#content #body h1.contentTitle {font-family:'Palatino Linotype', 'Book Antiqua', 'Palatino', serif; font-weight:normal; color:#482801; border-bottom:1px solid #482801; font-size:2.2em; padding-bottom:5px; margin-top:5px;}
+
+#content #body h2 {font-family:'Palatino Linotype', 'Book Antiqua', 'Palatino', serif;}
+
+#content .level_3_heading {height:0.9em; margin:0px; padding:0px; background:#731515 url('/kibu/site_resources/images/design_graphics/SubHeading_BG.jpg') no-repeat top right;}
+
+#content .level_3_heading h3 {line-height:1.0em; font-family:'Palatino Linotype', 'Book Antiqua', 'Palatino', serif; text-transform:uppercase; margin:0px; padding:0px; font-size:1.0em; color:#731515; display:block; float:left; padding-right:5px; background:#fff;}
+
+
+
+
+#content #body li {margin-bottom:10px;}
+
+#content #body .imageboxaside {text-align:center; padding:10px; background:#f9dfa9; border:1px solid #482801; color:#482801; margin-bottom:10px;}
+
+#content #body .imageboxaside.left {margin-right:10px;}
+
+#content #body .imageboxaside.right {margin-left:10px;}
+
+#content #body .imagebox {display:inline-block;}
+
+#content #body .imagebox img {clear:both; padding-bottom:5px;}
+
+#content #body .imagecaption {font-size:0.7em;}
+
+#content #body .imagecredit {text-align:right; font-size:0.6em; font-style:italic;}
+
+#content #body form fieldset.half {width:43%;}
+
+#content #body form fieldset label {font-size:0.7em; padding-top:5px;}
+
+#content #body a.rssFeed {display:block; float:right; width:25px; height:25px; text-decoration:none; background:url('/kibu/site_resources/images/design_graphics/icon_rss.jpg') top left no-repeat;}
+
+#content #body a.rssFeed span {margin-left:-9999px;}
+
+
+
+#content #sidebar {float:right; width:300px; margin-top:10px;}
+
+#content #sidebar .level_3_heading {margin-top:30px;}
+
+#content #sidebar a.joinTodayBtn, #content #sidebar a.donateBtn, #content #sidebar .socialNetworking {display:block; text-align:center;}
+
+#content #sidebar .socialNetworking {margin:10px 0px;}
+
+#content #sidebar a.socialBtn {margin:4px;}
+
+#content #sidebar .latest_posts dl, #content #sidebar .upcoming_events dl {margin:10px; font-size:0.9em;}
+
+#content #sidebar .latest_posts dl dt, #content #sidebar .upcoming_events dl dt {padding-top:10px; padding-bottom:5px;}
+
+#content #sidebar .latest_posts dl dt a, #content #sidebar .upcoming_events dl dt a {font-weight:bold;}
+
+#content #sidebar .latest_posts dl dd {margin:0px 0px 5px 20px; border-bottom:1px solid #f9dfa9; padding-bottom:5px; font-style:italic;}
+
+#content #sidebar .upcoming_events dl dd {margin-left:20px; font-style:italic;}
+
+
+
+#content #sidebar nav.localNav { border:1px solid #482801; background:#f9dfa9; }
+
+#content #sidebar nav.localNav h1 { margin:0px; padding:5px; background:#482801; color:#f9ae17; font-family:'Bodoni'; font-weight:normal; }
+
+#content #sidebar ul { list-style:none; margin:0px; margin-bottom:10px; padding:0px; font-size:0.75em; }
+
+#content #sidebar #localNav li { list-style-type:none; margin:4px; padding:0px; }
+
+#content #sidebar #localNav li a { display:block; padding:5px 10px; margin:0px; text-decoration:none; }
+
+#content #sidebar #localNav li a.selectedLink { font-style:italic; }
+
+#content #sidebar #localNav li a:hover { background:#f9ae17; color:#482801; }
+
+.twtr-widget {border:1px solid white;}
+
+
+.homepage #body {width:610px; padding-top:10px; float:left; margin-bottom:20px;}
+
+#HPslideshow {clear:left; display:block; width:610px;}
+
+.homepage .topleft .coin-slider {width:610px; overflow: hidden; position: relative; z-index:900; clear:left; background:url('../graphics/slide_shadow.png') no-repeat top center; margin-left:0px;}
+
+.homepage .topleft .coin-slider a {text-decoration: none; outline: none; border: none;}
+
+.homepage .topleft .cs-buttons {font-size: 0px; margin: 10px 0px; float: left;}
+
+.homepage .topleft .cs-buttons a {margin-left:5px; display:block; background:#482801; border:1px solid #482801; height:12px; width:12px; float:left; text-indent:-1000px;}
+
+.homepage .topleft .cs-buttons a.cs-active {background:#f9ae17; border:1px solid #482801; color: #f9ae17;}
+
+.homepage .topleft .cs-title { width:590px; padding:10px; background-color:#482801; color:#f9ae17; text-align:center;}
+
+.homepage .topleft a.cs-prev, .homepage .topleft a.cs-next {background-color:#482801; color:#f9ae17; padding:0px 10px;}
+
+.homepage .news_roundup {font-size:0.9em;}
+
+.homepage .news_roundup .roundupItem {margin:10px; border-bottom:1px solid #731515;}
+
+.homepage .news_roundup .roundupItem h3 {margin:0px; padding:5px; font-weight:normal;}
+
+.homepage .news_roundup .roundupItem h3 a {text-decoration:none;}
+
+.homepage .news_roundup .roundupPostedBy, .homepage .news_roundup .roundupBody {margin-left:20px;}
+
+.homepage .news_roundup .roundupPostedBy {font-size:0.9em; margin-bottom:0px; padding-bottom:0px;}
+
+
+
+
+#footer {margin:auto; width:985px; margin-top:10px; font-size:0.7em; text-align:center; background:#f9dfa9; padding-top:20px;}
+
+.builtOnKibu {margin:auto; width:985px; font-size:0.7em; text-align:center; background:#f9dfa9; padding-bottom:20px; margin-bottom:30px;}
+
+
+/*/////////////
+///////		Form Style Over-rides 
+*/
+
+form fieldset {border:1px solid #482801;}
+
+form fieldset legend {background:#482801; color:#f9ae17;}
+
+
+
+/*/////////////
+///////		Editor Toolbar Over-rides 
+*/
+
+div.editorToolbar {margin:auto; width:1000px; background:#482801; margin-top:0px; border:1px solid #482801; position:fixed; left:0; right:0; bottom:0; z-index:1000;
+	-webkit-box-shadow: 0px -5px 10px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    0px -5px 10px rgba(50, 50, 50, 0.75);
+	box-shadow:         0px -5px 10px rgba(50, 50, 50, 0.75);
+}
+
+div.editorToolbar h3 {color:#f9dfa9;}
+
+div.editorToolbar div.panel {border:0px; background:#f9dfa9;}
+
+div.editorToolbar #tabs {list-style:none; padding-left:0px; margin:0px;  border:0px;}
+
+div.editorToolbar #tabs a {padding:6px 7px 5px 8px; border-left:0px; border-bottom:1px solid #482801; border-right:1px solid #482801; background:#482801; color:#f9dfa9;}
+
+div.editorToolbar #tabs a:hover {background:#f9ae17; color:#482801;}
+
+div.editorToolbar #tabs a.active {background:#f9dfa9; padding:6px 7px 6px 8px; color:#000000; border:0px; border-right:1px solid #482801;}
+
+
+
+
+div#fancybox-outer {background:none !important;}
+
+div#fancybox-content {border-color:#f9dfa9 !important; background:#f9dfa9 !important; border-radius:5px;}
+
+iframe#fancybox-frame {background:#f9dfa9 !important;}

@@ -9,33 +9,37 @@
 	 * @copyright Kibu 2010
 	 * @version 1.0.0
 	 *
-	 * 
+	 *
 	 */
 
-		// require/include all core classes
-		require_once 'kibu/core/class/Database.php';
-		require_once 'kibu/core/class/Url.php';
-		require_once 'kibu/core/class/Kibu.php';
+	// require/include all core classes
+	require_once './kibu/core/framework/data/Database.php';
+	require_once './kibu/core/Navigation/Url.php';
+	require_once './kibu/core/System/Kibu.php';
+	require_once './kibu/core/System/Utility.php';
 
-		try {
-				$db = new Database();
-				$url = new URL(); // instantiate URL class
-				$kibu = new Kibu($db, $url);
-				if($kibu->testConfig()) {
-						$kibu->setCore();
-						require_once './kibu/core/includes/loadcustom.php'; // include any custom modules
-						$kibu->outputPage();
-						$db->disconnect();
-				}
-				else {
-						include_once 'kibu/core/class/Install.php';
-						$install = new Install($db, $url);
-				}
+	try {
+		$db = new Database(Utility::loadConfig());
+		$url = new URL_ext(); // instantiate URL class
+		$kibu = new Kibu($db, $url);
+		if($kibu->testConfig()) {
+			$kibu->setCore();
+			require_once './kibu/core/includes/loadcustom.php'; // include any custom modules
+			$kibu->outputPage();
+						
+			require_once 'framework_tests.php';
+			
+			$db->disconnect();
 		}
-		catch(RuntimeException $e) {
-				echo 'Runtime Exception encountered: ' . $e->getMessage();
+		else {
+			include_once 'kibu/core/class/Install.php';
+			$install = new Install($db, $url);
 		}
-		catch(Exception $e) {
-				echo 'Exception encountered: ' . $e->getMessage();
-		}
+	}
+	catch(RuntimeException $e) {
+		echo 'Runtime Exception encountered: ' . $e->getMessage();
+	}
+	catch(Exception $e) {
+		echo 'Exception encountered: ' . $e->getMessage();
+	}
 ?>

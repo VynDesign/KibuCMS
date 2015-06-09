@@ -1,3 +1,16 @@
+/*/////////////
+///////		HTML5 Support Styles 
+*/
+
+article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary { display:block; }
+
+/*/////////////
+///////		Over-all Styles 
+*/
+
+html {font-family:'Geneva', 'Verdana', sans-serif;}
+
+body {position:relative;}
 
 .left {float:left;}
 
@@ -7,29 +20,37 @@
 
 .clear {clear:both;}
 
-.warning {color:red!important;}
+.small {font-size:0.7em;}
 
-div.message {margin:10px 0px; padding:10px;}
 
-div.success {border:3px solid #18569b; background:#d2e4f7; color:#18569b;}
+div.message {margin:10px 0px; padding:10px; border:3px solid #18569b; -ms-border-radius:10px; -moz-border-radius:10px; -o-border-radius:10px; -webkit-border-radius:10px; border-radius:10px; background:#d2e4f7; color:#18569b;}
 
-div.error {border:3px solid #af1b1b; background:#e4d6d6; color:#af1b1b;}
+div.message h3 {margin:0px; padding:0px;}
 
-a.editAssetLink {display:block; padding:5px 10px; border:1px solid #9a9a9a; background:#eeeeee; margin:10px 0px;}
+div.success {border-color:#00741B; background:#DBFFD5; color:#00741B;}
 
-.small {font-size:0.8em;}
+div.error {border-color:#af1b1b; background:#e4d6d6; color:#af1b1b;}
+
+div.warning {border-color:#723A00; background:#FFCB47; color:#723A00;}
+
+a.editAssetLink {display:block; padding:5px 10px; font-size:1.0em !important; -ms-border-radius:10px; -moz-border-radius:10px; -o-border-radius:10px; -webkit-border-radius:10px; border-radius:10px; border:1px solid #9a9a9a; background:#eeeeee; margin:1.5em 0px;}
+
+div.asset_edit:hover { background:#eeeeee; }
+
 
 /*/////////////
-		Form Styles 
+///////		Form Styles 
 */
 
 form {}
 
 form.publishform input.textInput {width:100%;}
 
-form select.full {width:100%;}
+form select.full, form textarea.full {width:100%;}
 
-form fieldset {margin-bottom:15px;}
+form fieldset {margin:15px 0px; border:2px solid #9a9a9a; -ms-border-radius:5px; -moz-border-radius:5px; -o-border-radius:5px; -webkit-border-radius:5px; border-radius:5px;}
+
+form fieldset legend {font-size:0.9em; font-weight:bold; color:#ffffff; padding:5px 10px; background:#9a9a9a; -ms-border-radius:5px; -moz-border-radius:5px; -o-border-radius:5px; -webkit-border-radius:5px; border-radius:5px;}
 
 form fieldset.half {width:45%;}
 
@@ -47,15 +68,21 @@ form label.half {width:43%;}
 
 form label.small {width:auto; margin-bottom:15px; height:3.0em;}
 
+form label.required { font-weight:bold; color:red; }
+
 form input.full {width:100%;}
+
+
+
+/*/////////////
+///////		Editor Toolbar Styles 
+*/
 
 div.editorToolbar {background:#cccccc; font-size:0.7em; margin-top:0px; margin-bottom:10px; position:relative;}
 
-div.editorToolbar ul lh {float:right; font-size:1.8em; padding:0px; margin:0px; margin-right:15px; font-style:italic; color:#ffffff;}
+div.editorToolbar h3 {float:right; font-size:1.8em; padding:0px; margin:0px; margin-right:15px; font-style:italic; color:#ffffff;}
 
-div.editorToolbar div.panel {clear:both; display: none; border:1px solid #9a9a9a; border-top:0px; background-color: #ffffff; padding:1em; margin:0px;}
-
-div.editorToolbar div.active-tab-body {display: block;}
+div.editorToolbar div.panel {clear:both; display: none; border:1px solid #9a9a9a; border-top:0px; background-color:#ffffff; padding:1em; margin:0px;}
 
 div.editorToolbar #tabs {list-style:none; padding-left:0px;}
 
@@ -63,4 +90,38 @@ div.editorToolbar #tabs li {float: left;}
 
 div.editorToolbar #tabs a {display:block; padding:5px 8px; background-color:#DCDCDC; text-decoration:none; color:#999999;}
 
-div.editorToolbar #tabs a.active-tab {background-color:#ffffff; border:1px solid #9a9a9a; border-bottom:1px solid #ffffff; padding-top:4px; color:#000000;}
+div.editorToolbar #tabs a.active {background-color:#ffffff; border:1px solid #9a9a9a; border-bottom:1px solid #ffffff; padding-top:4px; color:#000000;}
+
+
+
+/*/////////////
+///////		Modal Window Styles 
+*/
+
+body#modal form label.half {margin-bottom:15px; width:45%;}
+
+body#modal form label.half input.text {width:85%; margin:auto;}
+
+body#modal form label textarea {width:100%;}
+
+div.rmFolderPane {width:32%; background:white; -ms-border-radius:5px; -moz-border-radius:5px; -o-border-radius:5px; -webkit-border-radius:5px; border-radius:5px; margin-top:5px;}
+
+div.rmFolderPane h4, div.rmFilePane h4 {margin:0px; padding:3px 10px;}
+
+div.rmFolderPane ul.rmFolderList, div.rmFilePane ul.rmFileList {height:340px; overflow:auto; margin:0px; padding:0px; margin-bottom:15px; list-style:none; background:#eeeeee;}
+
+div.rmFolderPane ul.rmFolderList li a, div.rmFilePane ul.rmFileList li a {display:block; text-decoration:none; padding:3px 10px; border-bottom:1px solid #ffffff;}
+
+div.rmFolderPane ul.rmFolderList li a:hover,  div.rmFilePane ul.rmFileList li a:hover {background:#ffffff;}
+
+div.rmFilePane {width:65%; background:white; padding:0px; -ms-border-radius:5px; -moz-border-radius:5px; -o-border-radius:5px; -webkit-border-radius:5px; border-radius:5px; margin-top:5px;}
+
+div.rmFilePane ul.rmFileList {list-style:none; background:#eeeeee;}
+
+div.rmFilePane ul.rmFileList, div.rmFilePane div.rmFileList  {height:340px; margin:0px; padding:0px; margin-bottom:15px; overflow:auto;}
+
+div.rmFilePane div.rmFileList {padding:10px;}
+
+table.sysManagement {font-size:0.7em; border-collapse:collapse; width:100%;}
+
+table.sysManagement td {border-top:1px solid black;}

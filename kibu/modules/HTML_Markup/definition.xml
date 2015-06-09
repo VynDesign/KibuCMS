@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+	<config>
+		<moduleName>HTML Markup</moduleName>
+		<moduleLink>HTML_markup</moduleLink>
+		<moduleVersion>1.0.0.0</moduleVersion>
+		<moduleDesc>Facilitates publishing of HTML content via a CKEditor WYSIWYG (What You See Is What You Get) interface.</moduleDesc>
+	</config>
+	<templates>
+		<template>
+			<templateName>HTML Markup Display</templateName>
+			<templateLink>HTML_display</templateLink>
+			<templateDesc>Dipslays HTML markup output.</templateDesc>
+			<templateType>AssetDisplay</templateType>
+		</template>
+		<template>
+			<templateName>HTML Publishing CKEditor</templateName>
+			<templateLink>HTML_CKEditor</templateLink>
+			<templateDesc>HTML edit mode view using CKEditor WYSIWYG.</templateDesc>
+			<templateType>AssetEdit</templateType>
+		</template>
+	</templates>
+	<contentAssetTypes>
+		<contentAssetType>
+			<assetTypeName>HTML Content (CKEditor WYSIWYG)</assetTypeName>
+			<assetTypeNameClean>body</assetTypeNameClean>
+			<assetTypeDesc>Displays HTML content and allows for editing via CKEditor WYSIWYG</assetTypeDesc>
+			<assetDisplayTemplate>HTML_display</assetDisplayTemplate>
+			<assetEditTemplate>HTML_CKEditor</assetEditTemplate>
+		</contentAssetType>		
+	</contentAssetTypes>
+</module>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+	<config>
+		<moduleName>Local Navigation</moduleName>
+		<moduleLink>local_nav</moduleLink>
+		<moduleVersion>1.0.0.0</moduleVersion>
+		<moduleDesc>Facilitates display of navigation items that are siblings of the loaded page.</moduleDesc>
+	</config>
+	<templates>
+		<template>
+			<templateName>Local Navigation (HTML5)</templateName>
+			<templateLink>local_nav_HTML5</templateLink>
+			<templateDesc>Displays local navigation items using HTML5 markup</templateDesc>
+			<templateType>AssetDisplay</templateType>
+		</template>
+		<template>
+			<templateName>Local Navigation (HTML4)</templateName>
+			<templateLink>local_nav_HTML4</templateLink>
+			<templateDesc>Displays local navigation items using HTML 4.01 markup</templateDesc>
+			<templateType>AssetDisplay</templateType>
+		</template>		
+		<template>
+			<templateName>Local Navigation Settings</templateName>
+			<templateLink>local_nav_settings</templateLink>
+			<templateDesc>Form that site editors can use to modify the settings for a "Local Navigation" content types.</templateDesc>
+			<templateType>AssetEdit</templateType>
+		</template>		
+	</templates>
+	<contentAssetTypes>
+		<contentAssetType>
+			<assetTypeName>Local Navigation (HTML5)</assetTypeName>
+			<assetTypeNameClean>local_nav_HTML5</assetTypeNameClean>
+			<assetTypeDesc>Displays local navigation items using HTML5 markup</assetTypeDesc>
+			<assetDisplayTemplate>local_nav_HTML5</assetDisplayTemplate>
+			<assetEditTemplate>local_nav_settings</assetEditTemplate>
+		</contentAssetType>
+		<contentAssetType>
+			<assetTypeName>Local Navigation (HTML4)</assetTypeName>
+			<assetTypeNameClean>local_nav_HTML4</assetTypeNameClean>
+			<assetTypeDesc>Displays local navigation items using HTML 4.01 markup</assetTypeDesc>
+			<assetDisplayTemplate>local_nav_HTML4</assetDisplayTemplate>
+			<assetEditTemplate>local_nav_settings</assetEditTemplate>
+		</contentAssetType>		
+	</contentAssetTypes>
+	<parameters>
+		<parameter name="listID" defaultValue="localNav" />
+		<parameter name="listClass" defaultValue="localNav" />
+		<parameter name="listItemClass" defaultValue="localNavItem" />
+		<parameter name="listItemLinkClass" defaultValue="localNavItemLink" />
+		<parameter name="selectedListItemClass" defaultValue="selected" />
+		<parameter name="selectedListItemLinkClass" defaultValue="selected" />
+	</parameters>
+</module>

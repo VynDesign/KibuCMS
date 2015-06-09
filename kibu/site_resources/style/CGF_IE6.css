@@ -1,0 +1,24 @@
+
+#globalNav {font-family: 'Palatino Linotype', 'Book Antiqua', 'Palatino', serif; background:#482801; position:relative; z-index:20000; clear:both; font-size:0.9em; height:2em; margin:0px auto; padding:0px;}
+
+#globalNav ul.dropnav li.topnodeitem {display:inline; float:left; list-style:none; margin:0px; padding:0; position:relative; left:50%;}
+
+#globalNav ul.dropnav li a {display:inline-block; padding:0px 15px; color:#f9ae17; text-decoration:none; height:2.0em; line-height:2.0em;}
+
+#globalNav ul.dropnav li.selected {background:#f9dfa9; color:#482801;}
+
+#globalNav ul.dropnav li.selected a {color:#482801;}
+
+#globalNav ul.dropnav li.ieFix a {background:#f9ae17; color:#482801; height:2.0em;}
+
+#globalNav ul li ul {font-family:'Geneva', 'Verdana', sans-serif; position:absolute; left:-9999em; z-index:20000; line-height:1.0em; width:auto; padding:5px;}
+
+#globalNav ul li.ieFix ul {float:none; position:absolute; left:0em; top:2.0em; display:block; width:auto; text-align:left; list-style-type:none; background:#f9ae17; margin:0px; padding:0px; z-index:20001;}
+
+#globalNav ul li.childnodeitemselected, #globalNav ul li.childnodeitem {float:none; display:block; white-space:nowrap; position:relative; z-index:20100; width:auto; font-size:75%; margin:0px; padding:1px;}
+
+#globalNav ul.childnode li.selected {white-space:nowrap; float:none; padding:0px;}
+
+#globalNav ul li.childnodeitem a {display:inline-block; float:none; white-space:nowrap; line-height:normal; margin:0px; padding:5px 20px;}
+
+#globalNav ul li.childnodeitem a:hover, ul.childnode li.selected a:hover {background:#f9dfa9;}

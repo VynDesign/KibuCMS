@@ -1,0 +1,107 @@
+PartID,Quantity,Colour,Category,DesignID,PartName,ImageURL,SetCount
+300526,1,"Black","Bricks",3005,"Brick 1X1","http://cache.lego.com/media/bricks/5/1/300526.jpg",361
+362226,1,"Black","Bricks",3622,"Brick 1X3","http://cache.lego.com/media/bricks/5/1/362226.jpg",244
+4121966,4,"Black","Bricks With Slope",3040,"Roof Tile 1X2/45°","http://cache.lego.com/media/bricks/5/1/4121966.jpg",261
+4504382,1,"Black","Bricks With Slope",54200,"Roof Tile 1X1X2/3, Abs","http://cache.lego.com/media/bricks/5/1/4504382.jpg",233
+4253815,2,"Black","Bricks, Special",52107,"Brick 1X2 W. Four Knobs","http://cache.lego.com/media/bricks/5/1/4253815.jpg",113
+4121715,4,"Black","Connectors",2780,"Connector Peg W. Friction","http://cache.lego.com/media/bricks/5/1/4121715.jpg",1232
+243126,11,"Black","Plates",2431,"Flat Tile 1X4","http://cache.lego.com/media/bricks/5/1/243126.jpg",335
+244526,2,"Black","Plates",2445,"Plate 2X12","http://cache.lego.com/media/bricks/5/1/244526.jpg",157
+302026,7,"Black","Plates",3020,"Plate 2X4","http://cache.lego.com/media/bricks/5/1/302026.jpg",625
+302226,7,"Black","Plates",3022,"Plate 2X2","http://cache.lego.com/media/bricks/5/1/302226.jpg",616
+302326,6,"Black","Plates",3023,"Plate 1X2","http://cache.lego.com/media/bricks/5/1/302326.jpg",714
+303026,1,"Black","Plates",3030,"Plate 4X10","http://cache.lego.com/media/bricks/5/1/303026.jpg",101
+307026,2,"Black","Plates",3070,"Flat Tile 1X1","http://cache.lego.com/media/bricks/5/1/307026.jpg",138
+362326,5,"Black","Plates",3623,"Plate 1X3","http://cache.lego.com/media/bricks/5/1/362326.jpg",340
+366626,2,"Black","Plates",3666,"Plate 1X6","http://cache.lego.com/media/bricks/5/1/366626.jpg",428
+379526,2,"Black","Plates",3795,"Plate 2X6","http://cache.lego.com/media/bricks/5/1/379526.jpg",509
+447726,2,"Black","Plates",4477,"Plate 1X10","http://cache.lego.com/media/bricks/5/1/447726.jpg",176
+4274405,1,"Black","Plates, Special",2508,"Plate 1X2X4 W. Ball","http://cache.lego.com/media/bricks/5/1/4274405.jpg",43
+4517925,10,"Black","Plates, Special",61252,"Plate 1X1 W/Holder Vertical","http://cache.lego.com/media/bricks/5/1/4517925.jpg",129
+4516843,1,"Black","Tyres And Rims For Snap Ø3,2",59895,"Tyre D8, Sebs","http://cache.lego.com/media/bricks/5/1/4516843.jpg",93
+4617848,2,"Black","Tyres And Rims For Snap Ø3,2",92409,"Tyre Ø17,6 X 6,24","http://cache.lego.com/media/bricks/5/1/4617848.jpg",31
+4206482,1,"Bright Blue","Connectors",43093,"Conn.Bush W.Fric./Crossale","http://cache.lego.com/media/bricks/5/1/4206482.jpg",826
+4514553,1,"Bright Blue","Connectors",6558,"Connector Peg W. Friction 3M","http://cache.lego.com/media/bricks/5/1/4514553.jpg",322
+4216657,1,"Bright Red","Bricks, Special Circles And Angles",30367,"Final Brick 2X2","http://cache.lego.com/media/bricks/5/1/4216657.jpg",42
+4142865,2,"Bright Red","Connectors",32062,"2M Cross Axle W. Groove","http://cache.lego.com/media/bricks/5/1/4142865.jpg",617
+300124,2,"Bright Yellow","Bricks",3001,"Brick 2X4","http://cache.lego.com/media/bricks/5/1/300124.jpg",320
+301024,2,"Bright Yellow","Bricks",3010,"Brick 1X4","http://cache.lego.com/media/bricks/5/1/301024.jpg",329
+370024,2,"Bright Yellow","Bricks And Beams, Special Ø 4,85",3700,"Technic Brick 1X2, Ø4.9","http://cache.lego.com/media/bricks/5/1/370024.jpg",93
+654124,1,"Bright Yellow","Bricks And Beams, Special Ø 4,85",6541,"Technic Brick 1X1","http://cache.lego.com/media/bricks/5/1/654124.jpg",49
+303924,2,"Bright Yellow","Bricks With Slope",3039,"Roof Tile 2X2/45°","http://cache.lego.com/media/bricks/5/1/303924.jpg",162
+329824,6,"Bright Yellow","Bricks With Slope",3298,"Roof Tile 2X3/25°","http://cache.lego.com/media/bricks/5/1/329824.jpg",49
+366524,1,"Bright Yellow","Bricks With Slope",3665,"Roof Tile 1X2 Inv.","http://cache.lego.com/media/bricks/5/1/366524.jpg",123
+374724,1,"Bright Yellow","Bricks With Slope",3747,"Roof Tile 2X3/25° Inv.","http://cache.lego.com/media/bricks/5/1/374724.jpg",62
+4121965,4,"Bright Yellow","Bricks With Slope",3040,"Roof Tile 1X2/45°","http://cache.lego.com/media/bricks/5/1/4121965.jpg",154
+4219911,4,"Bright Yellow","Bricks With Slope",3037,"Roof Tile 2X4/45°","http://cache.lego.com/media/bricks/5/1/4219911.jpg",32
+4526936,1,"Bright Yellow","Bricks, Special Circles And Angles",6564,"Right Roof Tile 2X3","http://cache.lego.com/media/bricks/5/1/4526936.jpg",2
+4527769,1,"Bright Yellow","Bricks, Special Circles And Angles",6565,"Left  Roof Tile 2X3","http://cache.lego.com/media/bricks/5/1/4527769.jpg",2
+302224,3,"Bright Yellow","Plates",3022,"Plate 2X2","http://cache.lego.com/media/bricks/5/1/302224.jpg",299
+302324,2,"Bright Yellow","Plates",3023,"Plate 1X2","http://cache.lego.com/media/bricks/5/1/302324.jpg",350
+303424,2,"Bright Yellow","Plates",3034,"Plate 2X8","http://cache.lego.com/media/bricks/5/1/303424.jpg",80
+303524,2,"Bright Yellow","Plates",3035,"Plate 4X8","http://cache.lego.com/media/bricks/5/1/303524.jpg",26
+362324,1,"Bright Yellow","Plates",3623,"Plate 1X3","http://cache.lego.com/media/bricks/5/1/362324.jpg",118
+366624,1,"Bright Yellow","Plates",3666,"Plate 1X6","http://cache.lego.com/media/bricks/5/1/366624.jpg",162
+371024,2,"Bright Yellow","Plates",3710,"Plate 1X4","http://cache.lego.com/media/bricks/5/1/371024.jpg",279
+379424,4,"Bright Yellow","Plates",3794,"Plate 1X2 W. 1 Knob","http://cache.lego.com/media/bricks/5/1/379424.jpg",142
+4188313,1,"Bright Yellow","Plates, Special",3176,"Coupling Plate 2X2","http://cache.lego.com/media/bricks/5/1/4188313.jpg",46
+4160868,2,"Bright Yellow","Plates, Special Circles And Angles",41769,"Right Plate 2X4 W/Angle","http://cache.lego.com/media/bricks/5/1/4160868.jpg",31
+4161331,2,"Bright Yellow","Plates, Special Circles And Angles",41770,"Left Plate 2X4 W/Angle","http://cache.lego.com/media/bricks/5/1/4161331.jpg",30
+4247642,1,"Bright Yellow","Plates, Special Circles And Angles",50304,"Right Plate 3X8 W/Angle","http://cache.lego.com/media/bricks/5/1/4247642.jpg",14
+4247644,1,"Bright Yellow","Plates, Special Circles And Angles",50305,"Left Plate 3X8 W/Angle","http://cache.lego.com/media/bricks/5/1/4247644.jpg",14
+4260192,1,"Bright Yellow","Plates, Special Circles And Angles",51739,"Plate 2X4X18°","http://cache.lego.com/media/bricks/5/1/4260192.jpg",27
+4249039,16,"Cool Silver, Drum Lacq","Plates, Special Circles And Angles",51809,"Round Plate 1X1, Chr. Lacq.","http://cache.lego.com/media/bricks/5/1/4249039.jpg",85
+4210636,2,"Dark Stone Grey","Bricks",2877,"Profile Brick 1X2","http://cache.lego.com/media/bricks/5/1/4210636.jpg",146
+4211090,2,"Dark Stone Grey","Bricks, Special Circles And Angles",3062,"Round Brick 1X1","http://cache.lego.com/media/bricks/5/1/4211090.jpg",146
+4249139,1,"Dark Stone Grey","Bricks, Special Circles And Angles",6143,"Brick Ø16 W. Cross","http://cache.lego.com/media/bricks/5/1/4249139.jpg",73
+4211086,1,"Dark Stone Grey","Connectors",6587,"Crossaxle 3M With Knob","http://cache.lego.com/media/bricks/5/1/4211086.jpg",284
+4499858,1,"Dark Stone Grey","Connectors",55013,"Cross Axle 8M With End Stop","http://cache.lego.com/media/bricks/5/1/4499858.jpg",150
+4540386,2,"Dark Stone Grey","Modelling Elements",61409,"Roof Tile W. Lattice 1X2X2/3","http://cache.lego.com/media/bricks/5/1/4540386.jpg",167
+4196768,2,"Dark Stone Grey","Plates, Special",2444,"Technic Bearing Plate 2X2","http://cache.lego.com/media/bricks/5/1/4196768.jpg",68
+4521187,4,"Dark Stone Grey","Plates, Special",60478,"Plate 1X2 W/Shaft Ø3.2","http://cache.lego.com/media/bricks/5/1/4521187.jpg",93
+4632574,2,"Dark Stone Grey","Plates, Special",4081,"Lamp Holder","http://cache.lego.com/media/bricks/5/1/4632574.jpg",63
+4210633,2,"Dark Stone Grey","Plates, Special Circles And Angles",6141,"Round Plate 1X1","http://cache.lego.com/media/bricks/5/1/4210633.jpg",209
+4211389,2,"Medium Stone Grey","Bricks",3005,"Brick 1X1","http://cache.lego.com/media/bricks/5/1/4211389.jpg",180
+4211541,2,"Medium Stone Grey","Bricks And Beams, Special Ø 4,85",32000,"Brick 1X2 M. 2 Holes Ø 4,87","http://cache.lego.com/media/bricks/5/1/4211541.jpg",106
+4211436,2,"Medium Stone Grey","Bricks With Slope",3660,"Roof Tile 2X2/45° Inv.","http://cache.lego.com/media/bricks/5/1/4211436.jpg",147
+4211489,4,"Medium Stone Grey","Bricks With Slope",4287,"Roof Tile 1X3/25° Inv.","http://cache.lego.com/media/bricks/5/1/4211489.jpg",51
+4529241,4,"Medium Stone Grey","Bricks, Special Circles And Angles",59900,"Nose Cone Small 1X1","http://cache.lego.com/media/bricks/5/1/4529241.jpg",113
+4211550,4,"Medium Stone Grey","Connectors",32013,"Angle Element, 0 Degrees [1]","http://cache.lego.com/media/bricks/5/1/4211550.jpg",79
+4211573,1,"Medium Stone Grey","Connectors",32123,"1/2 Bush","http://cache.lego.com/media/bricks/5/1/4211573.jpg",368
+4211758,2,"Medium Stone Grey","Connectors",42610,"Hub Ø11,2 X 7,84","http://cache.lego.com/media/bricks/5/1/4211758.jpg",146
+4211807,2,"Medium Stone Grey","Connectors",3673,"Connector Peg","http://cache.lego.com/media/bricks/5/1/4211807.jpg",441
+4211515,2,"Medium Stone Grey","Frames, Windows, Walls And Doors",4865,"Wall Element 1X2X1","http://cache.lego.com/media/bricks/5/1/4211515.jpg",96
+4211503,2,"Medium Stone Grey","Interior",4599,"Tap Ø4.9/6.4","http://cache.lego.com/media/bricks/5/1/4211503.jpg",149
+4211350,5,"Medium Stone Grey","Plates",2412,"Radiator Grille 1X2","http://cache.lego.com/media/bricks/5/1/4211350.jpg",289
+4211360,1,"Medium Stone Grey","Plates",2445,"Plate 2X12","http://cache.lego.com/media/bricks/5/1/4211360.jpg",75
+4211397,3,"Medium Stone Grey","Plates",3022,"Plate 2X2","http://cache.lego.com/media/bricks/5/1/4211397.jpg",327
+4211429,2,"Medium Stone Grey","Plates",3623,"Plate 1X3","http://cache.lego.com/media/bricks/5/1/4211429.jpg",177
+4211445,2,"Medium Stone Grey","Plates",3710,"Plate 1X4","http://cache.lego.com/media/bricks/5/1/4211445.jpg",313
+4514846,2,"Medium Stone Grey","Plates",60479,"Plate 1X12","http://cache.lego.com/media/bricks/5/1/4514846.jpg",58
+4262978,1,"Medium Stone Grey","Plates, Special",32125,"Technic Rotor, 3 Blades","http://cache.lego.com/media/bricks/4/1/4262978.jpg",38
+4541978,2,"Medium Stone Grey","Plates, Special",61252,"Plate 1X1 W/Holder Vertical","http://cache.lego.com/media/bricks/5/1/4541978.jpg",86
+4211475,2,"Medium Stone Grey","Plates, Special Circles And Angles",4032,"Plate 2X2 Round","http://cache.lego.com/media/bricks/5/1/4211475.jpg",136
+4211351,1,"Medium Stone Grey","Wheel Base",2415,"Wheel Fork 2X2","http://cache.lego.com/media/bricks/5/1/4211351.jpg",21
+4244369,2,"Tr. Bright Orange","Bricks With Slope",50746,"Roof Tile 1 X 1 X 2/3","http://cache.lego.com/media/bricks/5/1/4244369.jpg",125
+4226179,1,"Tr. Brown","Bricks",3065,"Brick 1X2 Without Pin","http://cache.lego.com/media/bricks/5/1/4226179.jpg",30
+4217722,2,"Tr. Brown","Modelling Elements",47904,"Front, 2X2, Sport, Tr.","http://cache.lego.com/media/bricks/5/1/4217722.jpg",54
+4244363,1,"Tr. Red","Bricks With Slope",50746,"Roof Tile 1 X 1 X 2/3","http://cache.lego.com/media/bricks/5/1/4244363.jpg",190
+3000844,2,"Tr. Yellow","Plates",30008,"Plate 1X1 - Tr.","http://cache.lego.com/media/bricks/5/1/3000844.jpg",147
+300401,1,"White","Bricks",3004,"Brick 1X2","http://cache.lego.com/media/bricks/5/1/300401.jpg",623
+303901,2,"White","Bricks With Slope",3039,"Roof Tile 2X2/45°","http://cache.lego.com/media/bricks/5/1/303901.jpg",199
+366001,4,"White","Bricks With Slope",3660,"Roof Tile 2X2/45° Inv.","http://cache.lego.com/media/bricks/5/1/366001.jpg",179
+366501,2,"White","Bricks With Slope",3665,"Roof Tile 1X2 Inv.","http://cache.lego.com/media/bricks/5/1/366501.jpg",204
+4161260,1,"White","Bricks With Special Bows",41764,"Right Shell 2X6W/Bow/Angle,Inv","http://cache.lego.com/media/bricks/5/1/4161260.jpg",18
+4161275,1,"White","Bricks With Special Bows",41765,"Left Shell 2X6W/Bow/Angle,Inv","http://cache.lego.com/media/bricks/5/1/4161275.jpg",18
+302001,2,"White","Plates",3020,"Plate 2X4","http://cache.lego.com/media/bricks/5/1/302001.jpg",448
+302401,5,"White","Plates",3024,"Plate 1X1","http://cache.lego.com/media/bricks/5/1/302401.jpg",229
+306801,1,"White","Plates",3068,"Flat Tile 2X2","http://cache.lego.com/media/bricks/5/1/306801.jpg",272
+306901,2,"White","Plates",3069,"Flat Tile 1X2","http://cache.lego.com/media/bricks/5/1/306901.jpg",375
+383201,1,"White","Plates",3832,"Plate 2X10","http://cache.lego.com/media/bricks/5/1/383201.jpg",102
+6009016,1,"White","Plates, Special",75937,"Parabolic Ring","http://cache.lego.com/media/bricks/5/1/6009016.jpg",13
+4289534,1,"White","Transportation Means, Aviation",41531,"Turbine Ø31.81 X 2","http://cache.lego.com/media/bricks/5/1/4289534.jpg",20
+4296997,1,"White","Tyres And Rims, Special",3464,"Hub For Fork","http://cache.lego.com/media/bricks/5/1/4296997.jpg",28
+
+
+
+
